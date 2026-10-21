@@ -188,6 +188,26 @@ Configuration (optional environment variables, see `.env.example`): `DATABASE_PA
 - **Update:** `PUT` replaces all fields; `PATCH` merges only provided fields, then `UPDATE`.
 - **Delete:** `DELETE` removes the row, or returns `404` if it does not exist.
 
+
+## Screenshots
+
+### API documentation (Swagger UI)
+![API overview](screenshots/01-docs-overview.png)
+
+### Create a student (201)
+![Create student](screenshots/02a-create-request.png)
+![Create student](screenshots/02b-create-response.png)
+
+### List students
+![List students](screenshots/03a-list-students.png)
+![List students](screenshots/03b-list-students-response.png)
+
+### Missing record handling (404)
+![Not found](screenshots/04-not-found.png)
+
+### Automated tests
+![Tests passing](screenshots/05-tests-passing.png)
+
 ## Submission notes
 
 - No passwords, secrets, or real student data are committed (`.gitignore` excludes `.env` and `*.db`).
